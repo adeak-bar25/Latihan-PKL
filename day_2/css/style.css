@@ -1,0 +1,94 @@
+:root {
+  --input-width: 100%;
+  --input-height: 2.2rem;
+  --rounded: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: #ebebeb;
+  font-family: "Inter", sans-serif;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin: 2rem auto;
+  width: min(98%, 560px);
+  margin: 1.3rem;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #a057ff;
+  transition: all 200ms ease-in-out;
+}
+
+fieldset {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+legend {
+  all: unset;
+  margin: 2rem 0;
+  font-size: 2.8rem;
+}
+
+label {
+  font-size: 1.1rem;
+}
+
+label::after {
+  content: "*";
+  margin-left: 3px;
+  color: #fb6e74;
+}
+
+input {
+  all: unset;
+  display: block;
+  border: 2px solid #383838;
+  background-color: #222222;
+  height: var(--input-height);
+  margin: 0.35rem 0 0.7rem;
+  padding: 0 0.5rem;
+  border-radius: var(--rounded);
+  transition: box-shadow 600ms ease-in-out;
+}
+
+input:focus,
+input:hover {
+  border: 2px solid #fff;
+  box-shadow: 10px 15px 50px rgba(110, 11, 223, 0.699);
+}
+
+button {
+  all: unset;
+  display: block;
+  height: var(--input-height);
+  border-radius: var(--rounded);
+  background: #ebebeb;
+  color: #000;
+  text-align: center;
+  margin: 1.5rem 0;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(110, 11, 223);
+  color: #fff;
+}

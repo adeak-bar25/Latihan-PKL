@@ -1,0 +1,123 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  margin: 1rem;
+  width: min(97%, 768px);
+  margin: 2rem auto 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+#profile > p {
+  padding: 0;
+  margin: 0;
+}
+
+#profile {
+  display: grid;
+  width: fit-content;
+  grid-template-areas:
+    "pic name"
+    "pic group";
+  gap: 0 1rem;
+}
+
+#profile > #pic {
+  width: 3.2rem;
+  aspect-ratio: 1/1;
+  grid-area: pic;
+}
+
+#profile > #username {
+  font-size: 1.3rem;
+  font-weight: 600;
+  grid-area: name;
+}
+
+#profile > #usergroup {
+  font-size: 0.95rem;
+  grid-area: group;
+}
+
+#day {
+  font-size: 1rem;
+}
+
+#card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.card {
+  border: 3px solid #c3ced9;
+  border-radius: 3px;
+  padding: 0.5rem 0.8rem;
+  display: grid;
+  grid-template-areas:
+    "subj-title btn"
+    "subj-time btn";
+}
+
+.card p {
+  margin: 0;
+}
+
+.card .subjects-title {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.4rem 0;
+  grid-area: subj-title;
+}
+
+.card .subjects-time {
+  padding: 0 0 0.3rem;
+  font-size: 1.03rem;
+  grid-area: subj-time;
+}
+
+.card button {
+  border: 2px solid #6559f5;
+  color: #6559f4;
+  font-weight: 600;
+  font-size: 1.18rem;
+  padding: 0.65rem 0.8rem;
+  border-radius: 0.3rem;
+  width: fit-content;
+  height: fit-content;
+  place-self: center end;
+  grid-area: btn;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 500ms ease-in-out;
+}
+
+.card button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #6559f5;
+  inset: 0;
+  z-index: -1;
+  translate: -103% 0;
+  transition: all 500ms ease-in-out;
+}
+
+.card button:hover {
+  color: #fff;
+}
+
+.card button:hover::before {
+  translate: 0;
+}

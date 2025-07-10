@@ -191,11 +191,7 @@ section p {
   width: 100dvw;
   height: 100%;
   margin: 1rem -1rem;
-<<<<<<< HEAD
-  background-image: url(./../img/austin-distel-wawEfYdpkag-unsplash-resized.jpg););
-=======
-  background-image: url(/../img/austin-distel-wawEfYdpkag-unsplash-resized.jpg);
->>>>>>> main
+  background-image: url(./../img/austin-distel-wawEfYdpkag-unsplash-resized.jpg);
   background-size: cover;
   background-position: 0;
 }

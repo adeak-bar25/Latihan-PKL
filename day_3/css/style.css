@@ -1,0 +1,335 @@
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  overflow-x: hidden;
+}
+
+button {
+  all: unset;
+  width: fit-content;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: calc(2rem + 2.2dvw);
+}
+
+.btn {
+  background-color: #7008e7;
+  color: #fff;
+  padding: 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.hid-mb {
+  display: none;
+}
+
+header {
+  background-color: #ede9fecc;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header > * {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+header #brand {
+  font-size: 1.5rem;
+  padding-right: 0.8rem;
+  margin-right: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header a {
+  all: unset;
+  cursor: pointer;
+  font-size: 1.05rem;
+  margin: 0.2rem;
+}
+
+header .header-left {
+  display: flex;
+}
+
+header ul,
+#contact ul {
+  margin: 0;
+  padding: 0;
+}
+
+header li,
+#contact li {
+  margin: 0;
+  list-style: none;
+}
+
+header li {
+  display: inline-block;
+}
+
+header .hamburger-menu {
+  cursor: pointer;
+}
+
+#home {
+  height: clamp(600px, 90dvh, 1080px);
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#home-desc {
+  padding-left: 1.2rem;
+}
+
+#home button {
+  font-size: calc(0.7rem + 0.5dvw);
+}
+
+section p {
+  font-size: calc(1rem + 0.5dvw);
+  margin: 1rem 0;
+}
+
+#home-decor {
+  position: relative;
+  height: 60%;
+}
+
+.box {
+  background-color: #6558f5;
+  box-shadow: 10px 10px 20px 10px #6558f5be;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  rotate: 50deg;
+  translate: 10rem 5rem;
+  transform: skew(2deg);
+}
+
+.pills {
+  background-color: #c3cfd9;
+  width: fit-content;
+  padding: 0.5rem 0.9rem;
+  border-radius: 20px 20px 4px 20px;
+  margin: 10px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 5px 10px 10px #5555557c;
+}
+
+#pills-1 {
+  top: 35%;
+  right: 35%;
+  animation: float-f-b 0.3s ease-in;
+}
+
+#pills-2 {
+  top: 50%;
+  right: 45%;
+  opacity: 0;
+  animation: float-f-b 0.3s ease-in 0.3s forwards;
+}
+
+#about {
+  padding: 4rem 0;
+  background-color: #f7f9fa;
+  padding: 1rem;
+  height: 100vh;
+  scroll-margin-top: 2.5rem;
+}
+
+.about-img {
+  width: 100dvw;
+  height: 100%;
+  margin: 1rem -1rem;
+  background-image: url(/img/austin-distel-wawEfYdpkag-unsplash-resized.jpg);
+  background-size: cover;
+  background-position: 0;
+}
+
+#contact-desc {
+  background-color: #207868;
+  color: #fff;
+  height: 50%;
+  padding-left: 1.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100dvw;
+}
+
+#contact-desc > * {
+  width: fit-content;
+}
+
+#contact {
+  margin: 0;
+  padding: 0;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+#contact li {
+  margin: 0.5rem 0;
+}
+
+#contact form {
+  background-color: #dfe6ed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 5rem;
+  gap: 5px;
+}
+
+form h2 {
+  margin: 0.5rem 0;
+}
+
+form label {
+  font-size: 1.2rem;
+  margin: 0.1rem 0;
+}
+
+form input {
+  padding: 0.5rem 0.5rem;
+  border: none;
+  border-radius: 2px;
+}
+
+textarea {
+  border: 0;
+  border-radius: 2px;
+  resize: none;
+  box-sizing: content-box;
+}
+
+#contact button {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hid-mb {
+    display: block;
+  }
+  header .hamburger-menu {
+    display: none;
+  }
+  header #brand {
+    border-right: 2px solid black;
+  }
+}
+
+@media (min-width: 1024px) {
+  #home {
+    display: flex;
+  }
+  #home-desc {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #home-decor {
+    width: 100%;
+    height: 100%;
+  }
+  .box {
+    width: 65vh;
+    height: 65vh;
+    translate: 12rem -5rem;
+  }
+  #about {
+    display: flex;
+    padding: 0;
+  }
+  #about > * {
+    width: 50%;
+    height: 100dvh;
+  }
+  #about-desc {
+    padding: 0 2rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-img {
+    margin: 0;
+  }
+  #contact {
+    display: flex;
+  }
+  #contact-desc {
+    height: 100%;
+    font-size: 1.2rem;
+  }
+  #contact > * {
+    width: 50%;
+  }
+}
+
+@keyframes float-f-b {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -298,9 +298,15 @@ textarea {
     display: flex;
     padding: 0;
   }
-  #about > * {
-    width: 50%;
+  #about > #about-desc {
+    width: 190%;
     height: 100dvh;
+  }
+  #about p {
+    margin-right: 20rem;
+  }
+  #about > #about-img {
+    width: 30%;
   }
   #about-desc {
     padding: 0 2rem 0 1.5rem;

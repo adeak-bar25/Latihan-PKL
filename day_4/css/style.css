@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #278cff;
+
+  --bg-primary-color: #f0f8ff;
+  --bg-secondary-color: #fff;
+  --text-color: #000;
+  --sep-color: #6c757d71;
+
+  --rounded: 0.2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-primary-color);
+  color: var(--text-color);
+  font-family: "TikTok Sans", sans-serif;
+  text-align: center;
+  transition:
+    background-color 0.5s ease-in-out,
+    color 0.5s ease-in-out;
+}
+
+h1,
+h2,
+p {
+  margin: 0.5rem;
+}
+
+h1,
+h2 {
+  color: var(--primary-color);
+}
+
+main {
+  background-color: var(--bg-secondary-color);
+  padding: 2rem;
+  border-radius: 0.7rem;
+  transition: background-color 0.5s ease-in-out;
+}
+
+main > section {
+  padding: 1.2rem 0;
+}
+
+main > section:not(:first-child) {
+  border-top: 2px solid var(--sep-color);
+}
+
+#counter-value {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0.7rem 0;
+}
+
+#username-input {
+  all: unset;
+  display: block;
+  margin: 0.7rem auto;
+  width: 85%;
+  padding: 0.5rem;
+  border-radius: var(--rounded);
+  border: 2px solid var(--sep-color);
+  text-align: left;
+}
+
+button {
+  all: unset;
+  display: block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+  border-radius: var(--rounded);
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-container {
+  width: fit-content;
+  margin: 0.5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.btn-container > button {
+  margin: 0;
+}
+
+.btn-container > #incr {
+  background-color: rgb(91, 209, 87);
+}
+
+.btn-container > #decr {
+  background-color: rgb(206, 26, 26);
+}
